@@ -10,6 +10,9 @@ import nl.quintor.solitaire.models.deck.Deck;
 import nl.quintor.solitaire.models.deck.DeckType;
 
 import javax.swing.*;
+/**
+ *  hello
+ */
 
 /**
  * Library class for card move legality checks. The class is not instantiable, all constructors are private and all methods are
