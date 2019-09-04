@@ -104,6 +104,12 @@ public class CardMoveChecks {
      */
     public static void cardLevelChecks(Deck targetDeck, Card cardToAdd) throws MoveException {
         // TODO: Write implementation
+        /**
+         *  Invalid moves:
+         *
+         *
+         *
+         */
     }
 
     // Helper methods
@@ -138,8 +144,18 @@ public class CardMoveChecks {
      * @return true if the cards are of different colors
      */
     static boolean opposingColor(Card card1, Card card2){
-        return redSuit(card1) && !redSuit(card2) || !redSuit(card1) && redSuit(card2);
 
+        //return redSuit(card1) && !redSuit(card2) || !redSuit(card1) && redSuit(card2);
+        boolean redCardOne = redSuit(card1);
+        boolean redCardTwo = redSuit(card2);
+
+        return redCardOne != redCardTwo;
+/**
+ *      check if cardOne is red
+ *      check if cardTwo is red
+ *      compare cardOne and cardTwo
+ *      return result
+ */
     }
 
     /**
